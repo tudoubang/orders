@@ -1,0 +1,38 @@
+/*清楚内置样式*/
+body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,table,th,td,form{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    clear:both;
+}
+.header-w{
+    width: 100%;
+}
+.logo-w-l{
+    width: 20%;
+    height: 38px;
+    background-color: #252429;
+    color:#969698;
+}
+.logo-w-r{
+    width: 78.52%;
+    height: 38px;
+    line-height:38px;
+    padding-left: 20px;
+    background-color: #32323a;
+    color:#fff;
+}
+.logo-l{
+    float: left;
+
+}
+.text-a{
+    text-align: center;
+}
+.content-l{
+    width:85%;
+}
+.content-r{
+    width:15%;
+}
