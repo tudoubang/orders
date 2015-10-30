@@ -1,0 +1,51 @@
+body,h1,h2,h3,h4,h5,h6,div,p,dt,dd,ol,li{
+    margin:0;
+    padding:0;
+}
+.a1{
+    background-color: #ff23dd;
+}
+.a2{
+    background-color: #32323a;
+}
+.a3{
+    background-color: #de6d4f;
+}
+.a4{
+    background-color: #c5c5c5;
+}
+.a5{
+    background-color: #fa7056;
+}
+
+/*-------------logo start------------*/
+/*logo layout size*/
+.logo-l{
+    width:20%;
+    float: left;
+}
+.logo-r{
+    width:80%;
+    float:right;
+}
+.logo-l, .logo-r{
+    height:45px;
+}
+/*-------------logo end-------------*/
+/*----------content start-----------*/
+/*content layout size*/
+#content, header{
+    width: 100%;
+}
+.content-l{
+    width:85%;
+    float: left;
+}
+.contetn-r{
+    width:15%;
+    float: right;
+}
+.content-l,.content-r{
+    height: 30em;
+}
+/*-----------content end------------*/
