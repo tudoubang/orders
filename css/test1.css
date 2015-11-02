@@ -1,0 +1,155 @@
+body,h1,h2,h3,h4,h5,h6,div,ul{
+    margin:0;
+    padding:0;
+}
+body{
+   font-family: "helvetica neue",arial,sans-serif;
+   width: 100%;
+   height: 960px;
+}
+header,#content,footer{
+    /*width:100%;*/
+}
+li{
+    list-style-type: none;
+}
+.logo-l,.content-l,.menu li,.inner-li,.msg-t .new,.msg-t .time{
+    float: left;
+}
+.text-c{
+    text-align: center;
+}
+
+/*-----header------*/
+header{
+    background-color: #32323a;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+}
+/*-----logo-----*/
+.logo-l{
+    width:15%;
+}
+.logo-r{
+    width:85%;
+    float:right;
+}
+.logo-r-l{
+    padding-left: 3%;
+}
+/*-----header------*/
+
+/*-----content------*/
+#content{
+    height: 75%;
+    background-color: #f1f2f2;
+}
+/*-----left-----*/
+.content-l{
+    width: 85%;
+}
+/*----menu----*/
+.menu{
+    height: 45px;
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+.menu li{
+    margin: 8px 20px;
+}
+.menu img{
+    vertical-align: middle;
+    max-width: 24px;
+    max-height: 24px;
+}
+.menu a{
+    margin-top: 2px;
+    text-decoration : none;
+    font-size: 15px;
+}
+/*----inner----*/
+.inner{
+    padding: 50px;
+}
+.inner-li{
+    width: 45%;
+    height: 380px;
+    background-color: #fff;
+    border:1px solid #d9d9d9;
+    color:#32323a;
+}
+.title{
+    padding:10px;
+    font-weight:bold;
+    border-bottom:1px solid #d9d9d9;
+}
+.tables,.message{
+    margin:35px 25px;
+}
+.tables table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tables tr {
+    border-bottom:1px solid #d9d9d9;
+    height: 45px;
+}
+.tables td span {
+    font-weight: bold;
+    color:red;
+}
+.td-r{
+    text-align: right;
+}
+.message li{
+    list-style:none;
+    height: 80px;
+    border-bottom: 1px dashed #000;
+    margin-top: 15px;
+}
+.new{
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+.time{
+    margin-left: 10px;
+}
+.msg-c{
+    margin: 15px auto;
+    position: relative;
+}
+/*-----right-----*/
+.content-r{
+    width: 14.91%;
+    height: 75%;
+    float: right;
+    background-color: #fff;
+    border-left: 1px solid #d9d9d9;
+}
+/*-----content------*/
+
+/*-----footer------*/
+footer{
+    height: 20%;
+}
+/*-----footer------*/
+
+
+.bc1{
+    background-color: #252429;
+}
+.bc2{
+    background-color: #32323a;
+}
+.bc3{
+    background-color: #de6d4f;
+}
+.bc4{
+    background-color: #c5c5c5;
+}
+.bc5{
+    background-color: #fa7056;
+}
