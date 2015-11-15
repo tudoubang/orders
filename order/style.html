@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bootstrap css</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <style>
+            .show-grid{
+                padding-top:15px;
+            }
+            .show-grid div{
+                padding-top:10px;
+                padding-bottom: 10px;
+                border: 1px solid rgba(86,61,124,.2);
+                background-color: rgba(86,61,124,.15);
+            }
+            body{
+                /*margin: 20px;*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>栅格系统</h2>
+            <div class="container-fuild">
+                <div class="container">
+                    <h3>从堆砌到水平排列-固定</h3>
+                    <div class="row show-grid">
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-8">.col-md-8</div>
+                        <div class="col-md-4">.col-md-4</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-6">.col-md-6</div>
+                        <div class="col-md-6">.col-md-6</div>
+                    </div>
+                </div>
+                <div class="container-fuild">
+                    <h3>从堆砌到排列-流式</h3>
+                    <div class="row show-grid">
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                        <div class="col-md-1">.col-md-1</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-8">.col-md-8</div>
+                        <div class="col-md-4">.col-md-4</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-6">.col-md-6</div>
+                        <div class="col-md-6">.col-md-6</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- 那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 .col-xs-* 和 .col-md-* -->
+                    <h3>移动设备和桌面屏幕</h3>
+                    <div class="row show-grid">
+                        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-xs-6">.col-xs-6</div>
+                        <div class="col-xs-6">.col-xs-6</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!--手机、平板、桌面 .col-sm-* 类-->
+                    <h3>手机、平板、桌面</h3>
+                    <div class="row show-grid">
+                        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+                        <div class="col-xs-6 col-md-4">.col-xs-6.col-md-4</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>多余的列（column）将另起一行排列</h3>
+                    <div class="row show-grid">
+                        <div class="col-xs-9">.col-xs-9</div>
+                        <div class="col-xs-4">.col-xs-4 4+9=13</div>
+                        <div class="col-xs-6">.col-xs-6</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container">
+                        <h3>响应式列重置</h3>
+                        <p class="lead">在某些阈值时，某些列可能会出现比别的列高的情况。</p>
+                        <p class="lead">为克服这一问题，建议联合使用<code>.clearfix</code>和响应式工具类</p>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                    </div>
+                    <div class="container">
+                        <p class="lead">除了列在分界点清除响应，需要<b>重置偏移，后推或者前拉某个列</b>。</p>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+                        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md .col-lg-6</div>
+                        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-5 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offst-0</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container">
+                        <h3>列偏移</h3>
+                        <p class="land">使用<code>.col-md-offset-*</code>类可以将列向右偏移</p>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-4">.col-md-4</div>
+                        <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container">
+                        <h3>列嵌套</h3>
+                        <p class="lead">被嵌套的列不能超过12列</p>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-sm-9">
+                            Leve1: .col-sm-9
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-6">.col-xs-8 .col-sm-6</div>
+                                <div class="col-xs-4 col-sm-6">.col-xs-8 .col-sm-6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container">
+                        <h1>列排序</h1>
+                        <p class="lead">通过使用<code>.col-md-push-*</code>和<code>.col-md-pull-*</code>类可以很容易的改变列排序</p>
+                    </div>
+                    <div class="row show-grid">
+                        <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+                        <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>排版</h2>
+            <div class="container">
+                <h3>标题</h3>
+                <div class="container">
+                    <h1>h1. Bootstrap heading&nbsp;<small>Secondary text</small></h1>
+                    <h2>h2. Bootstrap heading&nbsp;<small>Secondary text</small></h2>
+                    <h3>h3. Bootstrap heading&nbsp;<small>Secondary text</small></h3>
+                    <h4>h4. Bootstrap heading&nbsp;<small>Secondary text</small></h4>
+                    <h5>h5. Bootstrap heading&nbsp;<small>Secondary text</small></h5>
+                    <h6>h6. Bootstrap heading&nbsp;<small>Secondary text</small></h6>
+                </div>
+            </div>
+            <div class="container">
+                <h3>页面主体</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <h4>中心内容</h4>
+                <p>通过<code>.lead</code>类可以让段落突出显示</p>
+                <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+            </div>
+            <div class="container">
+                <h3>内联文本元素</h3>
+                <p>突出显示<code>&lt;mark&gt;</code></p>
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <h3>删除文本</h3>
+                <p>被删除的文本使用<code>&lt;del&gt;</code></p>
+                <del>This line of text is meant to be treated as deleted text.</del>
+                <h3>无用文本</h3>
+                <p>没用的文本使用<code>&lt;s&gt;</code></p>
+                <s>This line of text is meant to be treated as no longer accurate.</s>
+                <h3>插入文本</h3>
+                <p>额外插入的文本使用<code>&lt;ins&gt;</code></p>
+                <ins>This line of text is meant to be treated as an addition to the document.</ins>
+                <h3>带下划线的文本</h3>
+                <p>文本下划线使用<code>&lt;u&gt;</code></p>
+                <u>This line of text will render as underlined</u>
+                <h3>小号文本</h3>
+                <p><code>&lt;small&gt;</code>文本内容是父容器大小的85%</p>
+                <p>
+                    <small>This line of text is meant to be treated as fine print.</small>
+                </p>
+                <h3>着重</h3>
+                <p>使用<code>&lt;strong&gt;</code>强调一段文本</p>
+                <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+                <h3>斜体</h3>
+                <p>使用<code>&lt;em&gt;</code>斜体强调一段文本</p>
+                <p>The following snippet of text is rendered as <em>italicized text</em>.</p>
+                <p><b>Alternate elements</b><i>Alternate elements</i></p>
+                <h3>对齐</h3>
+                <div class="container">
+                    <p class="text-left">Left aligned text.</p>
+                    <p class="text-center">Center aligned text.</p>
+                    <p class="text-right">Right aligned text.</p>
+                    <p class="text-justify">Justified text.</p>
+                    <p class="text-nowrap">No wrap text.</p>
+                </div>
+                <h3>改变大小写</h3>
+                <p><code>.text-lowercase</code>文本小写</p>
+                <p><code>.text-uppercase</code>文本大写</p>
+                <p><code>.text-capitalize</code>文本首字母大写</p>
+                <p class="text-lowercase">Lowercased text.</p>
+                <p class="text-uppercase">Uppercased text.</p>
+                <p class="text-capitalize">capitalized text.</p>
+                <h3>基本缩略语</h3>
+                <p><code>&lt;abbr&gt;</code></p>
+                <p>An abbreviation of the word attribute is <abbr title="attribute">attr.</abbr></p>
+                <h3>首字母缩略语</h3>
+                <p>为缩略语添加<code>.initialism</code>类，可以让font-size变得稍微小点</p>
+                <p><abbr title="html" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+                <h3>地址</h3>
+                <address>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    P: (123) 456-7890<br>
+                </address>
+            </div>
+            <div class="container">
+                <h2>引用</h2>
+                <div class="container">
+                    <div class="container">
+                        <h3>默认样式引用</h3>
+                        <p>将任何元素包裹在<code>&lt;blockquote&gt;</code>中即可视为引用样式</p>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        </blockquote>
+                    </div>
+                    <div class="container">
+                        <h3>多种引用样式</h3>
+                        <p><code>&lt;footer&gt;</code>命名来源,<code>&lt;cite&gt;</code>用于表示来源名称</p>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer>Someone famous in <cite title="title">Source Title</cite></footer>
+                        </blockquote>
+                    </div>
+                    <div class="container">
+                        <h3>内容右对齐</h3>
+                        <p><code>.blockquote-reverse</code>类让内容右对齐的效果</p>
+                        <blockquote class="blockquote-reverse">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer>Someone famous in Source Title</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container">
+                        <h2>代码</h2>
+                    </div>
+                    <div class="container">
+                        <div class="container">
+                            <h3>用户输入</h3>
+                            <p>通过<code>&lt;kbd&gt;</code>标记用户通过键盘输入内容</p>
+                            <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.</p>
+                            <p>To edit settings, press <kbd>ctrl + ,</kbd></p>
+                        </div>
+                        <div class="container">
+                            <h3>代码块</h3>
+                            <p>多代码使用<code>&lt;pre&gt;</code>标签，还可以使用<code>.pre-scrollable</code>类，起作用是设置max-height为350px，并垂直方向展示滚动条</p>
+                            <pre class="pre-scrollable text-left">
+                                public class Text1{
+                                    public static void main(String[] args){
+                                        String str="a,b,c,d,e,f,g,h,i,j,k";
+                                        String s[] =str.split(",");//分割字符串得到数组
+                                        for(int i=0;i&gt;s.length;i++)
+                                        System.out.println(s[i]+"");
+                                    }
+                                }
+                            </pre>
+                        </div>
+                        <div class="container">
+                            <h3>变量</h3>
+                            <p>通过<code>&lt;var&gt;</code>标记变量</p>
+                            <p>
+                                <var>y</var>=<var>m</var><var>x</var>+<var>b</var>
+                            </p>
+                        </div>
+                        <div class="container">
+                            <h3>程序输出</h3>
+                            <p>通过<code>&lt;samp&gt;</code>标签来标记程序输出的内容</p>
+                            <samp>This text is meant to be treated as sample output from a computer program.</samp>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="container">
+                            <h2>表格</h2>
+                        </div>
+                        <div class="container">
+                            <h3>基本实例</h3>
+                            <table class="table">
+                                <caption>Optional table caption.</caption>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container">
+                            <h3>条纹状表格</h3>
+                            <p>通过<code>.table-striped</code>类可以给<code>&lt;tbody&gt;</code>之内的每一行增加斑马线样式</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container">
+                            <h3>带边框的表格</h3>
+                            <p>添加<code>.table-bordered</code>类为表格和其中的单元格添加边框</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
